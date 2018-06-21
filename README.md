@@ -1,4 +1,5 @@
 # Trabalho de Laboratório de Informática (ES31C / ES11)
+Repositório com os arquivos .c dos trabalhos de Laboratório de Informática do curso de Engenharia de Software da UTFPR-CP.
 
 ## Trabalho 1
 Considere o seguinte modelo de registro que representa uma pessoa:
