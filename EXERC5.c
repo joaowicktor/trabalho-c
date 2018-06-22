@@ -2,6 +2,9 @@
 // Trabalho Final: Laboratório de Informática
 // Curso: Engenharia de Software (ES11)
 
+#include <stdio.h>
+#include <locale.h>
+
 struct poltronas {
     int inteira;
     int vazia;
@@ -9,9 +12,6 @@ struct poltronas {
 };
 
 struct poltronas reg;
-
-#include <stdio.h>
-#include <locale.h>
 
 int main ()  {
     setlocale(LC_ALL,"Portuguese");
