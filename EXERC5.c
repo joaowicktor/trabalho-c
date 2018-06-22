@@ -3,9 +3,9 @@
 // Curso: Engenharia de Software (ES11)
 
 struct poltronas {
-    float inteira;
-    float vazia;
-    float meia;
+    int inteira;
+    int vazia;
+    int meia;
 };
 
 struct poltronas reg;
@@ -59,19 +59,16 @@ int main ()  {
 
     printf("\n\nInformações da sessão:\n");
     printf("-----------------------\n");
-    printf("Quantidade de poltronas vazias = %.2f poltronas.\n", reg.vazia);
-    printf("Quantidade de poltronas inteiras ocupadas = %.2f poltronas.\n", reg.inteira);
-    printf("Quantidade de poltronas meia entrada ocupadas = %.2f poltronas.\n", reg.meia);
+    printf("Quantidade de poltronas vazias = %d poltronas.\n", reg.vazia);
+    printf("Quantidade de poltronas inteiras ocupadas = %d poltronas.\n", reg.inteira);
+    printf("Quantidade de poltronas meia entrada ocupadas = %d poltronas.\n", reg.meia);
     printf("-----------------------\n");
 
     // Porcentagem de cada tipo de poltrona
-    reg.inteira = (reg.inteira/soma)*100;
-    reg.meia = (reg.meia/soma)*100;
-    reg.vazia = (reg.vazia/soma)*100;
 
-    printf("Porcentagem de poltronas vazias = %.2f%%\n", reg.vazia);
-    printf("Porcentagem de poltronas inteiras ocupadas = %.2f%%\n", reg.inteira);
-    printf("Porcentagem de poltronas meia entrada ocupadas = %.2f%%\n", reg.meia);
+    printf("Porcentagem de poltronas vazias = %.2f%%\n", (reg.inteira/soma)*100);
+    printf("Porcentagem de poltronas inteiras ocupadas = %.2f%%\n", (reg.meia/soma)*100);
+    printf("Porcentagem de poltronas meia entrada ocupadas = %.2f%%\n", (reg.vazia/soma)*100);
     printf("-----------------------\n");
     printf("Valor total apurado = %.2f reais.\n", valort);
 
