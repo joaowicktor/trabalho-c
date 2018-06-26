@@ -1,6 +1,4 @@
-// Exercício 5
-// Trabalho Final: Laboratório de Informática
-// Curso: Engenharia de Software (ES11)
+// Exercício 5 do trabalho final
 
 #include <stdio.h>
 #include <locale.h>

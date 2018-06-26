@@ -1,18 +1,18 @@
-// Exercício 1 do Trabalho Final
+// Exercício 1 do trabalho final
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
 
-    struct data {
-        int dia, mes, ano;
-    };
+struct data {
+    int dia, mes, ano;
+};
 
-    struct pessoa {
-        char nome[40], cpf[15];
-        struct data dat;
-    };
+struct pessoa {
+    char nome[40], cpf[15];
+    struct data dat;
+};
 
 int main () {
     int idade, i, z;
@@ -66,10 +66,3 @@ int dataAtual() {
     struct tm tm = *localtime(&anoAtual);
     return (tm.tm_year + 1900);
 }
-
-/*void teste() {
-    int i, aux;
-    for(i = 0; i < 2; i++) {
-        scanf("%d")
-    }
-}*/
